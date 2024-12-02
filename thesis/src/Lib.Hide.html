@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html><head><meta charset="utf-8"><title>Lib.Hide</title><link rel="stylesheet" href="Agda.css"></head><body><pre class="Agda"><a id="1" class="Markup">\begin{code}</a>
+<a id="14" class="Keyword">module</a> <a id="21" href="Lib.Hide.html" class="Module">Lib.Hide</a> <a id="30" class="Keyword">where</a>
+
+<a id="37" class="Markup">\end{code}</a><a id="47" class="Background">
+%&lt;*hide&gt;
+</a><a id="57" class="Markup">\begin{code}</a>
+<a id="70" class="Keyword">record</a> <a id="Hide"></a><a id="77" href="Lib.Hide.html#77" class="Record">Hide</a> <a id="82" class="Symbol">(</a><a id="83" href="Lib.Hide.html#83" class="Bound">X</a> <a id="85" class="Symbol">:</a> <a id="87" href="Agda.Primitive.html#320" class="Primitive">Set</a><a id="90" class="Symbol">)</a> <a id="92" class="Symbol">:</a> <a id="94" href="Agda.Primitive.html#320" class="Primitive">Set</a> <a id="98" class="Keyword">where</a>
+  <a id="106" class="Keyword">constructor</a> <a id="hide"></a><a id="118" href="Lib.Hide.html#118" class="InductiveConstructor">hide</a>
+  <a id="125" class="Keyword">field</a> <a id="131" class="Symbol">.</a><a id="Hide.expose"></a><a id="132" href="Lib.Hide.html#132" class="Field">expose</a> <a id="139" class="Symbol">:</a> <a id="141" href="Lib.Hide.html#83" class="Bound">X</a>
+<a id="143" class="Markup">\end{code}</a><a id="153" class="Background">
+  %&lt;/hide&gt;
+  </a><a id="167" class="Markup">\begin{code}</a>
+<a id="180" class="Keyword">open</a> <a id="185" href="Lib.Hide.html#77" class="Module">Hide</a> <a id="190" class="Keyword">public</a>
+
+<a id="198" class="Markup">\end{code}</a><a id="208" class="Background">
+%&lt;*irrAx&gt;
+</a><a id="219" class="Markup">\begin{code}</a>
+<a id="232" class="Keyword">postulate</a>
+  <a id="244" class="Symbol">.</a><a id="irrAx"></a><a id="245" href="Lib.Hide.html#245" class="Postulate">irrAx</a> <a id="251" class="Symbol">:</a> <a id="253" class="Symbol">{</a><a id="254" href="Lib.Hide.html#254" class="Bound">A</a> <a id="256" class="Symbol">:</a> <a id="258" href="Agda.Primitive.html#320" class="Primitive">Set</a><a id="261" class="Symbol">}</a> <a id="263" class="Symbol">→</a> <a id="265" class="Symbol">.</a><a id="266" href="Lib.Hide.html#254" class="Bound">A</a> <a id="268" class="Symbol">→</a> <a id="270" href="Lib.Hide.html#254" class="Bound">A</a>
+<a id="272" class="Markup">\end{code}</a><a id="282" class="Background">
+%&lt;/irrAx&gt;
+</a><a id="293" class="Markup">\begin{code}</a>
+
+<a id="307" class="Symbol">.</a><a id="unhide"></a><a id="308" href="Lib.Hide.html#308" class="Function">unhide</a> <a id="315" class="Symbol">:</a> <a id="317" class="Symbol">forall</a> <a id="324" class="Symbol">{</a><a id="325" href="Lib.Hide.html#325" class="Bound">A</a><a id="326" class="Symbol">}</a> <a id="328" class="Symbol">→</a> <a id="330" href="Lib.Hide.html#77" class="Record">Hide</a> <a id="335" href="Lib.Hide.html#325" class="Bound">A</a> <a id="337" class="Symbol">→</a> <a id="339" href="Lib.Hide.html#325" class="Bound">A</a>
+<a id="341" href="Lib.Hide.html#308" class="Function">unhide</a> <a id="348" class="Symbol">(</a><a id="349" href="Lib.Hide.html#118" class="InductiveConstructor">hide</a> <a id="354" href="Lib.Hide.html#354" class="Bound">a</a><a id="355" class="Symbol">)</a> <a id="357" class="Symbol">=</a> <a id="359" href="Lib.Hide.html#245" class="Postulate">irrAx</a> <a id="365" href="Lib.Hide.html#354" class="Bound">a</a>
+<a id="367" class="Markup">\end{code}</a><a id="377" class="Background">
+</a></pre></body></html>
