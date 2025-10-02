@@ -1,16 +1,14 @@
 <!DOCTYPE HTML>
-<html><head><meta charset="utf-8"><title>Lib.Two</title><link rel="stylesheet" href="Agda.css"></head><body><pre class="Agda"><a id="1" class="Keyword">module</a> <a id="8" href="Lib.Two.html" class="Module">Lib.Two</a> <a id="16" class="Keyword">where</a>
+<html><head><meta charset="utf-8"><title>Lib.Two</title><link rel="stylesheet" href="Conor.css"></head><body><pre class="Agda"><a id="1" class="Keyword">module</a> <a id="8" href="Lib.Two.html" class="Module">Lib.Two</a> <a id="16" class="Keyword">where</a>
 
-<a id="23" class="Keyword">open</a> <a id="28" class="Keyword">import</a> <a id="35" href="Lib.Hide.html" class="Module">Lib.Hide</a>
+<a id="23" class="Keyword">open</a> <a id="28" class="Keyword">import</a> <a id="35" href="Lib.Zero.html" class="Module">Lib.Zero</a>
+<a id="44" class="Keyword">open</a> <a id="49" class="Keyword">import</a> <a id="56" href="Lib.One.html" class="Module">Lib.One</a>
 
-<a id="45" class="Keyword">open</a> <a id="50" class="Keyword">import</a> <a id="57" href="Lib.Zero.html" class="Module">Lib.Zero</a>
-<a id="66" class="Keyword">open</a> <a id="71" class="Keyword">import</a> <a id="78" href="Lib.One.html" class="Module">Lib.One</a>
+<a id="65" class="Keyword">data</a> <a id="Two"></a><a id="70" href="Lib.Two.html#70" class="Datatype">Two</a> <a id="74" class="Symbol">:</a> <a id="76" href="Agda.Primitive.html#388" class="Primitive">Set</a> <a id="80" class="Keyword">where</a>
+  <a id="Two.ff"></a><a id="88" href="Lib.Two.html#88" class="InductiveConstructor">ff</a> <a id="91" class="Symbol">:</a> <a id="93" href="Lib.Two.html#70" class="Datatype">Two</a>
+  <a id="Two.tt"></a><a id="99" href="Lib.Two.html#99" class="InductiveConstructor">tt</a> <a id="102" class="Symbol">:</a> <a id="104" href="Lib.Two.html#70" class="Datatype">Two</a>
 
-<a id="87" class="Keyword">data</a> <a id="Two"></a><a id="92" href="Lib.Two.html#92" class="Datatype">Two</a> <a id="96" class="Symbol">:</a> <a id="98" href="Agda.Primitive.html#320" class="Primitive">Set</a> <a id="102" class="Keyword">where</a>
-  <a id="Two.ff"></a><a id="110" href="Lib.Two.html#110" class="InductiveConstructor">ff</a> <a id="113" class="Symbol">:</a> <a id="115" href="Lib.Two.html#92" class="Datatype">Two</a>
-  <a id="Two.tt"></a><a id="121" href="Lib.Two.html#121" class="InductiveConstructor">tt</a> <a id="124" class="Symbol">:</a> <a id="126" href="Lib.Two.html#92" class="Datatype">Two</a>
-
-<a id="not"></a><a id="131" href="Lib.Two.html#131" class="Function">not</a> <a id="135" class="Symbol">:</a> <a id="137" href="Lib.Two.html#92" class="Datatype">Two</a> <a id="141" class="Symbol">→</a> <a id="143" href="Lib.Two.html#92" class="Datatype">Two</a>
-<a id="147" href="Lib.Two.html#131" class="Function">not</a> <a id="151" href="Lib.Two.html#121" class="InductiveConstructor">tt</a> <a id="154" class="Symbol">=</a> <a id="156" href="Lib.Two.html#110" class="InductiveConstructor">ff</a>
-<a id="159" href="Lib.Two.html#131" class="Function">not</a> <a id="163" href="Lib.Two.html#110" class="InductiveConstructor">ff</a> <a id="166" class="Symbol">=</a> <a id="168" href="Lib.Two.html#121" class="InductiveConstructor">tt</a>
+<a id="not"></a><a id="109" href="Lib.Two.html#109" class="Function">not</a> <a id="113" class="Symbol">:</a> <a id="115" href="Lib.Two.html#70" class="Datatype">Two</a> <a id="119" class="Symbol">→</a> <a id="121" href="Lib.Two.html#70" class="Datatype">Two</a>
+<a id="125" href="Lib.Two.html#109" class="Function">not</a> <a id="129" href="Lib.Two.html#99" class="InductiveConstructor">tt</a> <a id="132" class="Symbol">=</a> <a id="134" href="Lib.Two.html#88" class="InductiveConstructor">ff</a>
+<a id="137" href="Lib.Two.html#109" class="Function">not</a> <a id="141" href="Lib.Two.html#88" class="InductiveConstructor">ff</a> <a id="144" class="Symbol">=</a> <a id="146" href="Lib.Two.html#99" class="InductiveConstructor">tt</a>
 </pre></body></html>
